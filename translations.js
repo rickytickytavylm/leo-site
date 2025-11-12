@@ -495,7 +495,7 @@ const imagePaths = {
         },
         backgrounds: {
             desktop: 'assets/rusMocups/newBackgroundForDesktop.jpg',
-            mobile: 'assets/rusMocups/mobileBackground.jpg',
+            mobile: 'assets/rusMocups/newBackgroundForDesktop.jpg',
             tgMobile: 'assets/rusMocups/tgSectionForMob.jpg',
             tgDesktop: 'assets/rusMocups/tgPromoDek.jpg'
         }
@@ -513,7 +513,7 @@ const imagePaths = {
         },
         backgrounds: {
             desktop: 'assets/rusMocups/newBackgroundForDesktop.jpg', // Same for EN
-            mobile: 'assets/rusMocups/mobileBackground.jpg' // Same for EN
+            mobile: 'assets/rusMocups/newBackgroundForDesktop.jpg' // Same for EN
         }
     },
     es: {
@@ -529,7 +529,7 @@ const imagePaths = {
         },
         backgrounds: {
             desktop: 'assets/rusMocups/newBackgroundForDesktop.jpg', // Same for ES
-            mobile: 'assets/rusMocups/mobileBackground.jpg' // Same for ES
+            mobile: 'assets/rusMocups/newBackgroundForDesktop.jpg' // Same for ES
         }
     }
 };

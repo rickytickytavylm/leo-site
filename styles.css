@@ -342,7 +342,7 @@ body {
 }
 
 .mobile-bg {
-    background-image: url('assets/rusMocups/mobileBackground.jpg');
+    background-image: url('assets/rusMocups/newBackgroundForDesktop.jpg');
     display: none;
 }
 
@@ -1520,6 +1520,7 @@ body {
 
     .mobile-bg {
         display: block;
+        background-position: 68% center;
     }
     
     .hero-overlay {
