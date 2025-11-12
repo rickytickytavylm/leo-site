@@ -1,0 +1,50 @@
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies (если добавите в будущем)
+node_modules/
+bower_components/
+
+# Build Files (если добавите сборку)
+dist/
+build/
+.cache/
+
+# Environment Variables
+.env
+.env.local
+.env.production
+.env.test
+
+# Temporary Files
+*.tmp
+*.temp
+.tmp/
+
+# Backup Files
+*.bak
+*.backup
+*-backup.*
+

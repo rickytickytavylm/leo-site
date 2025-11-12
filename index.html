@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Recovery - Ваш путь к восстановлению</title>
+    <meta name="description" content="Leo Recovery - комплексное приложение для преодоления зависимостей с AI-помощником, дневником, трекером и поддержкой сообщества.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=5">
+    <script src="translations.js?v=5"></script>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo" data-i18n="hero.logo">Leo</div>
+                <div class="nav-links">
+                    <a href="#features" class="nav-link" data-i18n="nav.features">Возможности</a>
+                    <a href="#download" class="nav-link" data-i18n="timeline.downloadBtn">Скачать</a>
+                    <a href="#community" class="nav-link community-only" data-i18n="nav.community">Сообщество</a>
+                </div>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg desktop-bg"></div>
+        <div class="hero-bg mobile-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <span class="status-dot"></span>
+                        Доступно на iOS
+                    </div>
+                    <h1 class="hero-title animate-fade-in">Найди свой путь к восстановлению</h1>
+                    <p class="hero-subtitle animate-fade-in">Leo Recovery — ваш персональный помощник в борьбе с зависимостями. AI-поддержка, дневник чувств, трекер прогресса и сообщество людей на пути к свободе.</p>
+                    <div class="hero-buttons animate-fade-in">
+                        <a href="https://apps.apple.com/ru/app/leo-recovery/id6752736987" target="_blank" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                            </svg>
+                            Скачать в App Store
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2000">0</div>
+                            <div class="stat-label">Пользователей</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5.0">0</div>
+                            <div class="stat-label">Рейтинг App Store</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10000">0</div>
+                            <div class="stat-label">Часов поддержки</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-mockup">
+                    <img src="assets/rusMocups/homePage.png" alt="Leo Recovery App" class="mockup-img">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Solution Section (White) -->
+    <section class="solution-section" id="about">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h2 class="section-title">Ваше решение для преодоления зависимостей</h2>
+                    <p class="section-description">Leo Recovery — это не просто приложение, а комплексная система поддержки, которая помогает людям вернуть контроль над своей жизнью.</p>
+                    <ul class="solution-list">
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Научно обоснованные методики восстановления</span>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Поддержка 24/7 от AI-помощника Leo GPT</span>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Безопасное и конфиденциальное пространство</span>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Сообщество людей на пути к выздоровлению</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="solution-mockup">
+                    <img src="assets/rusMocups/openScreen.png" alt="Leo App Opening Screen" class="solution-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Gradient) -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Все инструменты для вашего восстановления</h2>
+                <p class="section-description">Leo Recovery объединяет самые эффективные методы поддержки в одном приложении</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-circle">
+                            <svg class="circle-svg" viewBox="0 0 120 120">
+                                <circle class="circle-bg" cx="60" cy="60" r="54"></circle>
+                                <circle class="circle-progress" cx="60" cy="60" r="54"></circle>
+                            </svg>
+                            <div class="circle-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2z"/>
+                                    <path d="M12 8v4"/>
+                                    <path d="M12 16h.01"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="benefit-title">Глубокое понимание</h3>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-circle">
+                            <svg class="circle-svg" viewBox="0 0 120 120">
+                                <circle class="circle-bg" cx="60" cy="60" r="54"></circle>
+                                <circle class="circle-progress" cx="60" cy="60" r="54"></circle>
+                            </svg>
+                            <div class="circle-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="benefit-title">Ментальное становление</h3>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-circle">
+                            <svg class="circle-svg" viewBox="0 0 120 120">
+                                <circle class="circle-bg" cx="60" cy="60" r="54"></circle>
+                                <circle class="circle-progress" cx="60" cy="60" r="54"></circle>
+                            </svg>
+                            <div class="circle-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="2" x2="12" y2="6"/>
+                                    <line x1="12" y1="18" x2="12" y2="22"/>
+                                    <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/>
+                                    <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/>
+                                    <line x1="2" y1="12" x2="6" y2="12"/>
+                                    <line x1="18" y1="12" x2="22" y2="12"/>
+                                    <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/>
+                                    <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="benefit-title">Стабильная мотивация</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1: Leo GPT -->
+                <div class="feature-card glass-card">
+                    <div class="feature-content">
+                        <div class="feature-icon">01</div>
+                        <h3 class="feature-title">Leo GPT — Ваш личный помощник</h3>
+                        <p class="feature-description">AI-ассистент, который понимает вас и готов помочь в любой момент. Основан на научных методиках психотерапии.</p>
+                        <ul class="feature-list">
+                            <li>Поддержка 24/7 без выходных</li>
+                            <li>Персонализированные советы</li>
+                            <li>Конфиденциальные беседы</li>
+                            <li>Эмпатичный и понимающий подход</li>
+                        </ul>
+                    </div>
+                    <div class="feature-mockup">
+                        <img src="assets/rusMocups/dialogWithLeoGPT.png" alt="Leo GPT Dialog">
+                    </div>
+                </div>
+
+                <!-- Feature 2: Recovery Tracker -->
+                <div class="feature-card glass-card">
+                    <div class="feature-content">
+                        <div class="feature-icon">02</div>
+                        <h3 class="feature-title">Трекер восстановления</h3>
+                        <p class="feature-description">Отслеживайте свой прогресс день за днем. Визуализация достижений мотивирует продолжать путь к выздоровлению.</p>
+                        <ul class="feature-list">
+                            <li>Счетчик дней трезвости</li>
+                            <li>Мотивирующие цитаты</li>
+                            <li>История достижений</li>
+                            <li>Напоминания и уведомления</li>
+                        </ul>
+                    </div>
+                    <div class="feature-mockup">
+                        <img src="assets/rusMocups/recoveryTracker.png" alt="Recovery Tracker">
+                    </div>
+                </div>
+
+                <!-- Feature 3: Diary -->
+                <div class="feature-card glass-card">
+                    <div class="feature-content">
+                        <div class="feature-icon">03</div>
+                        <h3 class="feature-title">Дневник чувств</h3>
+                        <p class="feature-description">Исследуйте свои эмоции и мысли. Структурированный дневник помогает понять триггеры и паттерны поведения.</p>
+                        <ul class="feature-list">
+                            <li>Структурированные записи</li>
+                            <li>Анализ эмоций и триггеров</li>
+                            <li>Интеграция с Leo GPT</li>
+                            <li>Приватность и конфиденциальность</li>
+                        </ul>
+                    </div>
+                    <div class="feature-mockup">
+                        <img src="assets/rusMocups/diaryMain.png" alt="Emotions Diary">
+                    </div>
+                </div>
+
+                <!-- Feature 4: Courses -->
+                <div class="feature-card glass-card">
+                    <div class="feature-content">
+                        <div class="feature-icon">04</div>
+                        <h3 class="feature-title">Образовательные курсы</h3>
+                        <p class="feature-description">Структурированные программы обучения, основанные на проверенных методиках логотерапии и когнитивно-поведенческой терапии.</p>
+                        <ul class="feature-list">
+                            <li>Курс "Зависимость как проблема"</li>
+                            <li>Программа "Созависимость"</li>
+                            <li>Пошаговые уроки с практикой</li>
+                            <li>Система прогресса и достижений</li>
+                        </ul>
+                    </div>
+                    <div class="feature-mockup">
+                        <img src="assets/rusMocups/addictionCourse.png" alt="Educational Courses">
+                    </div>
+                </div>
+
+                <!-- Feature 5: Feed -->
+                <div class="feature-card glass-card">
+                    <div class="feature-content">
+                        <div class="feature-icon">05</div>
+                        <h3 class="feature-title">Лента знаний</h3>
+                        <p class="feature-description">Полезные статьи, истории выздоровления и экспертные материалы для поддержки вашего пути к свободе.</p>
+                        <ul class="feature-list">
+                            <li>Реальные истории восстановления</li>
+                            <li>Научные статьи и исследования</li>
+                            <li>Практические советы экспертов</li>
+                            <li>Вдохновляющий контент</li>
+                        </ul>
+                    </div>
+                    <div class="feature-mockup">
+                        <img src="assets/rusMocups/leoFeed.png" alt="Knowledge Feed">
+                    </div>
+                </div>
+
+                <!-- Feature 6: Practices -->
+                <div class="feature-card glass-card">
+                    <div class="feature-content">
+                        <div class="feature-icon">06</div>
+                        <h3 class="feature-title">Практики и упражнения</h3>
+                        <p class="feature-description">Интерактивные практики для развития навыков самопознания, эмоциональной регуляции и преодоления триггеров.</p>
+                        <ul class="feature-list">
+                            <li>Тематический словарь терминов</li>
+                            <li>Анализ защитных механизмов</li>
+                            <li>Упражнения на осознанность</li>
+                            <li>Техники эмоциональной саморегуляции</li>
+                        </ul>
+                    </div>
+                    <div class="feature-mockup">
+                        <img src="assets/rusMocups/practice.png" alt="Practices">
+                    </div>
+                </div>
+
+                <!-- Feature 7: Rehabs -->
+                <div class="feature-card glass-card">
+                    <div class="feature-content">
+                        <div class="feature-icon">07</div>
+                        <h3 class="feature-title">Агрегатор реабилитационных центров</h3>
+                        <p class="feature-description">Найдите профессиональную помощь рядом с вами. База проверенных реабилитационных центров по всей России.</p>
+                        <ul class="feature-list">
+                            <li>База центров по всей России</li>
+                            <li>Подробная информация о программах</li>
+                            <li>Отзывы и рейтинги</li>
+                            <li>Прямая связь с центрами</li>
+                        </ul>
+                    </div>
+                    <div class="feature-mockup">
+                        <img src="assets/rusMocups/rehabsAggregator.png" alt="Rehab Centers Aggregator">
+                    </div>
+                </div>
+
+                <!-- Feature 8: Community -->
+                <div class="feature-card glass-card">
+                    <div class="feature-content">
+                        <div class="feature-icon">08</div>
+                        <h3 class="feature-title">Сообщество поддержки</h3>
+                        <p class="feature-description">Общайтесь с людьми, которые понимают вас. Делитесь опытом, получайте поддержку и вдохновение.</p>
+                        <ul class="feature-list">
+                            <li>Безопасное пространство общения</li>
+                            <li>Истории успеха от реальных людей</li>
+                            <li>Взаимная поддержка и мотивация</li>
+                            <li>Модерация и конфиденциальность</li>
+                        </ul>
+                    </div>
+                    <div class="feature-mockup">
+                        <img src="assets/rusMocups/realStories.png" alt="Community Support">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section (White) -->
+    <section class="download-section" id="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="journey-timeline">
+                    <div class="timeline-line">
+                        <div class="timeline-progress"></div>
+                    </div>
+                    
+                    <div class="timeline-steps">
+                        <div class="timeline-step" data-step="1">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                                </svg>
+                            </div>
+                            <div class="step-content">
+                                <h4 class="step-title">Признание проблемы</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-step" data-step="2">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="step-content">
+                                <h4 class="step-title">Обращение за помощью</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-step" data-step="3">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                                </svg>
+                            </div>
+                            <div class="step-content">
+                                <h4 class="step-title">Интеграция новых знаний</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="section-title">Начните свой путь сегодня</h2>
+                <p class="section-description">Присоединяйтесь к тысячам людей, которые уже начали свой путь к свободе с Leo Recovery</p>
+                <a href="https://apps.apple.com/ru/app/leo-recovery/id6752736987" target="_blank" class="btn btn-large btn-white">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                    </svg>
+                    Скачать в App Store
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community CTA Section (Gradient) -->
+    <section class="community-section" id="community">
+        <div class="community-bg"></div>
+        <div class="community-overlay"></div>
+        <div class="container">
+            <h2 class="section-title">Полезные ресурсы</h2>
+            <div class="community-content">
+                <p class="section-description">Присоединяйтесь к нашему сообществу в Telegram и получайте ежедневную поддержку, мотивацию и полезные материалы</p>
+                <a href="https://t.me/Leo_Recovery" target="_blank" class="btn btn-liquid-glass">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                    </svg>
+                    Присоединиться
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="#home" class="nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            <span>Главная</span>
+        </a>
+        <a href="#features" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            <span>Функции</span>
+        </a>
+        <a href="#download" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Скачать</span>
+        </a>
+        <a href="#community" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <span>Сообщество</span>
+        </a>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-company">MELNI APPS, LLC</div>
+                    <p class="footer-description">Ваш путь к восстановлению начинается здесь. Вместе мы сильнее.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Контакты</h4>
+                        <p><a href="mailto:rickytickytavylm@gmail.com">rickytickytavylm@gmail.com</a></p>
+                        <p><a href="#" class="about-link">О компании</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Правовая информация</h4>
+                        <p><a href="#" class="privacy-link">Политика конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 MELNI APPS, LLC. Все права защищены.</p>
+                <p class="footer-website"><a href="https://melniapps.com" target="_blank">melniapps.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- About Company Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>О компании</h3>
+                <button class="modal-close" data-modal="aboutModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4>MELNI APPS, LLC</h4>
+                <div class="company-info">
+                    <p><strong>Телефон:</strong> <a href="tel:+37493864503">+374 93 864503</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:rickytickytavylm@gmail.com">rickytickytavylm@gmail.com</a></p>
+                    <p><strong>Веб-сайт:</strong> <a href="https://melniapps.com" target="_blank">melniapps.com</a></p>
+                    <p><strong>Адрес:</strong> apt. 204, 26A M. Khorenats st.</p>
+                    <p><strong>Город:</strong> Yerevan, Armenia (AM)</p>
+                    <p><strong>Почтовый индекс:</strong> 0010</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Политика конфиденциальности сайта</h3>
+                <button class="modal-close" data-modal="privacyModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Последнее обновление:</strong> 12 ноября 2025</p>
+                
+                <h4>О данной политике</h4>
+                <p>Данная политика конфиденциальности относится исключительно к веб-сайту Leo Recovery. Для политики конфиденциальности мобильного приложения Leo Recovery, пожалуйста, ознакомьтесь с документацией в приложении.</p>
+
+                <h4>Сбор информации</h4>
+                <p>Наш веб-сайт является информационным и <strong>не собирает</strong> личные данные пользователей. Мы не используем cookies, системы аналитики или другие инструменты отслеживания.</p>
+
+                <h4>Ссылки на внешние ресурсы</h4>
+                <p>Наш сайт содержит ссылки на App Store, Telegram и другие внешние ресурсы. Мы не несем ответственности за политику конфиденциальности этих сайтов. При переходе по ссылкам применяется политика конфиденциальности соответствующих платформ.</p>
+
+                <h4>Безопасность</h4>
+                <p>Поскольку мы не собираем персональные данные посетителей сайта, вопросы их защиты и хранения не применимы к данному веб-сайту.</p>
+
+                <h4>Изменения в политике</h4>
+                <p>Мы оставляем за собой право обновлять эту политику. Любые изменения вступают в силу сразу после публикации на сайте.</p>
+
+                <h4>Контакты</h4>
+                <p>Если у вас есть вопросы о данной политике конфиденциальности сайта, свяжитесь с нами:</p>
+                <p>Email: <a href="mailto:rickytickytavylm@gmail.com">rickytickytavylm@gmail.com</a></p>
+                <p>Сайт разработчиков: <a href="https://melniapps.com" target="_blank">melniapps.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <script src="script.js?v=5"></script>
+    <script src="languageSwitcher.js?v=5"></script>
+</body>
+</html>
+
