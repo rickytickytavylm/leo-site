@@ -31,6 +31,11 @@ class LanguageSwitcher {
         const langButtons = document.querySelectorAll('.lang-btn');
         langButtons.forEach(btn => {
             btn.addEventListener('click', () => {
+                // Haptic feedback
+                if ('vibrate' in navigator) {
+                    navigator.vibrate(15);
+                }
+                
                 const lang = btn.getAttribute('data-lang');
                 this.switchLanguage(lang);
             });

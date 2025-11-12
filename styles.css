@@ -33,6 +33,9 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     background: var(--bg-white);
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 /* White Background for Content */
@@ -1471,6 +1474,14 @@ body {
    Responsive Design
    ======================================== */
 @media (max-width: 768px) {
+    /* Buttons - smaller size for mobile to prevent text wrapping */
+    .btn {
+        font-size: 14px;
+        padding: 12px 24px;
+        gap: 8px;
+        white-space: nowrap;
+    }
+    
     /* Hide cursor glow on mobile */
     .cursor-glow {
         display: none;

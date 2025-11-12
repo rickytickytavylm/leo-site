@@ -456,6 +456,15 @@ if ('serviceWorker' in navigator) {
 }
 
 // ========================================
+// Haptic Feedback (Vibration)
+// ========================================
+function hapticFeedback(duration = 10) {
+    if ('vibrate' in navigator) {
+        navigator.vibrate(duration);
+    }
+}
+
+// ========================================
 // Mobile Bottom Navigation
 // ========================================
 const mobileNav = document.querySelector('.mobile-bottom-nav');
@@ -505,17 +514,32 @@ function updateActiveNavItem() {
     });
 }
 
-// Smooth scroll for mobile nav
+// Smooth scroll for mobile nav with offset
 navItems.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
+        hapticFeedback(15); // Vibration on tap
+        
         const targetId = item.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
         
         if (targetSection) {
-            targetSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            // Different offsets for different sections
+            let offset = 80; // Default offset for navbar
+            
+            if (targetId === 'features') {
+                offset = 120; // More space for features section
+            } else if (targetId === 'download') {
+                offset = 140; // Even more space for download section
+            } else if (targetId === 'home') {
+                offset = 0; // No offset for home
+            }
+            
+            const targetPosition = targetSection.offsetTop - offset;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
             });
         }
     });
