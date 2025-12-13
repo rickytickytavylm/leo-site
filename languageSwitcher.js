@@ -9,16 +9,18 @@ class LanguageSwitcher {
     // Detect user's browser language or load from localStorage
     detectLanguage() {
         const savedLang = localStorage.getItem('leoRecoveryLang');
-        if (savedLang && (savedLang === 'ru' || savedLang === 'en' || savedLang === 'es')) {
+        if (savedLang && (savedLang === 'ru' || savedLang === 'en')) {
             return savedLang;
         }
 
         const browserLang = navigator.language || navigator.userLanguage;
         if (browserLang.startsWith('ru')) {
             return 'ru';
-        } else if (browserLang.startsWith('es')) {
-            return 'es';
         }
+        // Spanish temporarily disabled
+        // else if (browserLang.startsWith('es')) {
+        //     return 'es';
+        // }
         return 'en'; // Default to English
     }
 
@@ -44,7 +46,7 @@ class LanguageSwitcher {
 
     // Switch language
     switchLanguage(lang, saveToStorage = true) {
-        if (lang !== 'ru' && lang !== 'en' && lang !== 'es') return;
+        if (lang !== 'ru' && lang !== 'en') return; // Spanish temporarily disabled
 
         this.currentLang = lang;
 
