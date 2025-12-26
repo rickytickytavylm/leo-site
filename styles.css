@@ -460,6 +460,13 @@ body {
     gap: 16px;
     margin-bottom: 40px;
     justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .btn-primary {
+    min-width: 250px;
+    justify-content: center;
 }
 
 .hero-stats {
@@ -556,6 +563,25 @@ body {
 .solution-section {
     padding: 120px 0;
     background: var(--bg-white);
+}
+
+/* Product Hunt Badge in Hero */
+.producthunt-link {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    text-decoration: none;
+}
+
+.producthunt-link:hover {
+    transform: translateY(-2px) scale(1.05);
+    opacity: 0.9;
+}
+
+.producthunt-badge {
+    width: 250px;
+    height: 54px;
+    display: block;
 }
 
 .solution-content {
@@ -1582,6 +1608,17 @@ body {
     .solution-content {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    /* Product Hunt Badge in Hero */
+    .hero-buttons .btn-primary,
+    .hero-buttons .producthunt-link {
+        width: 250px;
+    }
+    
+    .producthunt-badge {
+        width: 100%;
+        height: auto;
     }
 
     .section-title {
