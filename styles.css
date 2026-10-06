@@ -337,16 +337,20 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     z-index: 0;
 }
 
-.desktop-bg {
-    background-image: url('assets/rusMocups/backgroundDesk_.webp');
+@media (min-width: 769px) {
+    .hero-bg {
+        background-image: url('assets/hero/hero-desktop.webp');
+    }
 }
 
-.mobile-bg {
-    background-image: url('assets/rusMocups/newBackgroundForDesktop.jpg');
-    display: none;
+@media (max-width: 768px) {
+    .hero-bg {
+        background-image: url('assets/hero/hero-mobile.webp');
+    }
 }
 
 .hero-overlay {
@@ -797,6 +801,17 @@ body {
     border-color: transparent;
 }
 
+.feature-card.feature-card--map,
+.feature-card.feature-card--map:nth-child(odd),
+.feature-card.feature-card--map:nth-child(even) {
+    grid-template-columns: minmax(0, 760px);
+    grid-template-areas: "content";
+    justify-content: center;
+    background: rgba(124, 58, 237, 0.06);
+    border-radius: 28px;
+    padding: 48px 40px;
+}
+
 /* Четные карточки - мокап справа */
 .feature-card:nth-child(even) {
     grid-template-areas: "content mockup";
@@ -1078,7 +1093,7 @@ body {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
-    background-image: url('assets/rusMocups/tgPromoDek.jpg');
+    background-image: none;
     background-size: cover;
     background-position: center;
     border-radius: 24px;
@@ -1183,6 +1198,10 @@ body {
 @media (min-width: 769px) {
     .mobile-bottom-nav {
         display: none !important;
+    }
+
+    .community-content {
+        background-image: url('assets/rusMocups/tgPromoDek.webp');
     }
 }
 
@@ -1551,15 +1570,6 @@ body {
         padding-bottom: 120px;
     }
     
-    .desktop-bg {
-        display: none;
-    }
-
-    .mobile-bg {
-        display: block;
-        background-position: 68% center;
-    }
-    
     .hero-overlay {
         background: linear-gradient(135deg, rgba(10, 10, 10, 0.4) 0%, rgba(124, 58, 237, 0.25) 100%);
     }
@@ -1678,6 +1688,11 @@ body {
             "mockup" !important;
         gap: 40px;
     }
+
+    .feature-card.feature-card--map {
+        grid-template-areas: "content" !important;
+        padding: 32px 20px;
+    }
     
     .feature-card:nth-child(even),
     .feature-card:nth-child(odd) {
@@ -1793,7 +1808,7 @@ body {
     }
     
     .community-content {
-        background-image: url('assets/rusMocups/tgSectionForMob.jpg');
+        background-image: url('assets/rusMocups/tgSectionForMob.webp');
         background-size: cover;
         background-position: center;
         padding: 50px 24px;

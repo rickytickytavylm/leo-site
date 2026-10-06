@@ -369,21 +369,6 @@ document.querySelectorAll('img').forEach(img => {
 });
 
 // ========================================
-// Preload Critical Images
-// ========================================
-function preloadImage(url) {
-    const img = new Image();
-    img.src = url;
-}
-
-// Preload hero backgrounds
-if (isDesktop) {
-    preloadImage('assets/rusMocups/dekstopBackground.jpg');
-} else {
-    preloadImage('assets/rusMocups/mobileBackground.jpg');
-}
-
-// ========================================
 // Handle External Links
 // ========================================
 document.querySelectorAll('a[target="_blank"]').forEach(link => {

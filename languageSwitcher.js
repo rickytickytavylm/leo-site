@@ -327,22 +327,22 @@ class LanguageSwitcher {
 
         // Update page title and meta
         if (lang === 'en') {
-            document.title = 'Leo Recovery - Your Path to Recovery';
+            document.title = 'Leo Recovery — Your Path to a Sober Life';
             const metaDesc = document.querySelector('meta[name="description"]');
             if (metaDesc) {
-                metaDesc.content = 'Leo Recovery - A comprehensive app for overcoming addictions with AI assistant, journal, tracker, and community support.';
+                metaDesc.content = 'Leo Recovery is there when it gets hard. Courses, meditations, speaker stories, an emotion diary, a recovery counter, and the Leo AI assistant. Full access is free.';
             }
         } else if (lang === 'es') {
-            document.title = 'Leo Recovery - Tu Camino Hacia La Recuperación';
+            document.title = 'Leo Recovery — Tu camino hacia una vida sobria';
             const metaDesc = document.querySelector('meta[name="description"]');
             if (metaDesc) {
-                metaDesc.content = 'Leo Recovery - Una aplicación completa para superar adicciones con asistente de IA, diario, rastreador y apoyo de la comunidad.';
+                metaDesc.content = 'Leo Recovery está cerca cuando es difícil. Cursos, meditaciones, historias, diario de emociones, contador y el asistente Leo. Acceso completo gratis.';
             }
         } else {
-            document.title = 'Leo Recovery - Ваш путь к восстановлению';
+            document.title = 'Leo Recovery — Путь к трезвой жизни';
             const metaDesc = document.querySelector('meta[name="description"]');
             if (metaDesc) {
-                metaDesc.content = 'Leo Recovery - комплексное приложение для преодоления зависимостей с AI-помощником, дневником, трекером и поддержкой сообщества.';
+                metaDesc.content = 'Leo Recovery рядом, когда тяжело. Курсы, медитации, спикерские истории, дневник эмоций, счётчик восстановления, AI-ассистент и карта встреч. Полный доступ бесплатно.';
             }
         }
     }
@@ -382,24 +382,6 @@ class LanguageSwitcher {
             });
         }
 
-        // Update background images via inline styles
-        const desktopBg = document.querySelector('.desktop-bg');
-        if (desktopBg && paths.backgrounds.desktop) {
-            desktopBg.style.backgroundImage = `url('${paths.backgrounds.desktop}')`;
-        }
-
-        const mobileBg = document.querySelector('.mobile-bg');
-        if (mobileBg && paths.backgrounds.mobile) {
-            mobileBg.style.backgroundImage = `url('${paths.backgrounds.mobile}')`;
-        }
-
-        // Community backgrounds (only for Russian)
-        if (lang === 'ru' && paths.backgrounds.tgDesktop) {
-            const communityContent = document.querySelector('.community-content');
-            if (communityContent) {
-                communityContent.style.backgroundImage = `url('${paths.backgrounds.tgDesktop}')`;
-            }
-        }
     }
 
     // Show/hide community section and rehabs aggregator for different languages
@@ -407,10 +389,10 @@ class LanguageSwitcher {
         const communitySection = document.querySelector('.community-section');
         const communityNavLink = document.querySelector('.nav-link[href="#community"]');
         const communityMobileNavItem = document.querySelector('.mobile-bottom-nav .nav-item[href="#community"]');
-        const rehabsFeatureCard = document.querySelector('.feature-card:nth-child(7)'); // Feature 7 - Rehabs Aggregator
+        const rehabsFeatureCard = document.querySelector('.feature-card:nth-child(7)'); // Feature 7 - meetings map, Russian only
 
         if (lang === 'en' || lang === 'es') {
-            // Hide community section, navigation, and rehabs aggregator for English and Spanish
+            // Hide community section, navigation, and the meetings map for English and Spanish
             if (communitySection) communitySection.style.display = 'none';
             if (communityNavLink) communityNavLink.style.display = 'none';
             if (communityMobileNavItem) communityMobileNavItem.style.display = 'none';

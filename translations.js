@@ -12,10 +12,10 @@ const translations = {
         // Hero Section
         hero: {
             logo: "Leo",
-            title: "Найди свой путь к восстановлению",
-            subtitle: "Leo Recovery — приложение для тех, кто ищет поддержку в борьбе с зависимостями. Инструменты отслеживания, сообщество единомышленников и персональные рекомендации.",
+            title: "Путь к трезвой жизни",
+            subtitle: "Leo Recovery рядом, когда тяжело. Курсы, медитации, спикерские истории, дневник эмоций, счётчик восстановления и AI-ассистент. Сейчас полный доступ бесплатно.",
             downloadBtn: "Скачать в App Store",
-            badge: "Доступно на iOS",
+            badge: "Бесплатно на iOS",
             usersLabel: "Активных пользователей",
             ratingLabel: "Рейтинг в App Store",
             supportLabel: "Часов поддержки"
@@ -31,100 +31,100 @@ const translations = {
         
         // Solution Section
         solution: {
-            title: "Ваше решение для преодоления зависимостей",
-            description: "Leo Recovery — это не просто приложение, а комплексная система поддержки, которая помогает людям вернуть контроль над своей жизнью.",
+            title: "Рядом, когда тяжело",
+            description: "Путь выхода из зависимости — это марафон, а не спринт. Leo Recovery собирает курсы, практики, истории и поддержку в одном приложении. Это образовательная платформа: она не заменяет врача, терапевта или лечение.",
             list: [
-                "Научно обоснованные методики восстановления",
-                "Поддержка 24/7 от AI-помощника Leo GPT",
-                "Безопасное и конфиденциальное пространство",
-                "Сообщество людей на пути к выздоровлению"
+                "Курсы по зависимости и созависимости",
+                "Медитации, практики и спикерские истории",
+                "AI-ассистент Leo — без осуждения",
+                "Карта встреч групп поддержки рядом с вами"
             ]
         },
         
         // Features Section
         featuresHeader: {
-            description: "Leo Recovery объединяет самые эффективные методы поддержки в одном приложении"
+            description: "Курсы, практики, истории и поддержка — в одном приложении"
         },
         
         features: {
             feature1: {
-                title: "Leo GPT — Ваш личный помощник",
-                description: "AI-ассистент, который понимает вас и готов помочь в любой момент. Основан на научных методиках психотерапии.",
+                title: "Leo — AI-ассистент",
+                description: "ИИ в контексте восстановления. Вопросы, советы и разбор ситуаций — без осуждения. Переписка остаётся конфиденциальной.",
                 list: [
-                    "Поддержка 24/7 без выходных",
-                    "Персонализированные советы",
+                    "Рядом в трудный момент",
+                    "Разбор ситуаций без осуждения",
                     "Конфиденциальные беседы",
-                    "Эмпатичный и понимающий подход"
+                    "Не заменяет врача или терапевта"
                 ]
             },
             feature2: {
-                title: "Трекер восстановления",
-                description: "Отслеживайте свой прогресс день за днем. Визуализация достижений мотивирует продолжать путь к выздоровлению.",
+                title: "Счётчик восстановления",
+                description: "Наглядный прогресс: дни трезвости и маленькие победы, которые помогают не бросать путь.",
                 list: [
-                    "Счетчик дней трезвости",
-                    "Мотивирующие цитаты",
-                    "История достижений",
-                    "Напоминания и уведомления"
+                    "Счётчик дней",
+                    "Маленькие победы по пути",
+                    "История прогресса",
+                    "Напоминания"
                 ]
             },
             feature3: {
-                title: "Дневник чувств",
-                description: "Исследуйте свои эмоции и мысли. Структурированный дневник помогает понять триггеры и паттерны поведения.",
+                title: "Дневник эмоций",
+                description: "Фиксируй переживания и триггеры, чтобы видеть закономерности, а не только отдельные тяжёлые дни.",
                 list: [
-                    "Структурированные записи",
-                    "Анализ эмоций и триггеров",
-                    "Интеграция с Leo GPT",
-                    "Приватность и конфиденциальность"
+                    "Записи о чувствах и триггерах",
+                    "Закономерности со временем",
+                    "Связка с ассистентом Leo",
+                    "Приватные записи"
                 ]
             },
             feature4: {
                 title: "Образовательные курсы",
-                description: "Структурированные программы обучения, основанные на проверенных методиках логотерапии и когнитивно-поведенческой терапии.",
+                description: "Пошаговые программы по зависимости и созависимости. Практический опыт людей, которые прошли этот путь.",
                 list: [
-                    "Курс \"Зависимость как проблема\"",
-                    "Программа \"Созависимость\"",
-                    "Пошаговые уроки с практикой",
-                    "Система прогресса и достижений"
+                    "Курс о зависимости",
+                    "Программа о созависимости",
+                    "Уроки с практикой",
+                    "Прогресс по шагам"
                 ]
             },
             feature5: {
-                title: "Лента знаний",
-                description: "Полезные статьи, истории выздоровления и экспертные материалы для поддержки вашего пути к свободе.",
+                title: "Лента, шортсы и спикерские",
+                description: "Истории людей, которые прошли через это, короткие видео и материалы ленты — на пару минут или на более длинный рассказ.",
                 list: [
-                    "Реальные истории восстановления",
-                    "Научные статьи и исследования",
-                    "Практические советы экспертов",
-                    "Вдохновляющий контент"
+                    "Спикерские видео и аудио",
+                    "Короткие видео",
+                    "Практические заметки",
+                    "Контент на каждый день"
                 ]
             },
             feature6: {
-                title: "Практики и упражнения",
-                description: "Интерактивные практики для развития навыков самопознания, эмоциональной регуляции и преодоления триггеров.",
+                title: "Медитации и практики",
+                description: "Аудио для тревоги, злости и тяги, и инструменты на сложный момент: радар срыва, иллюзии, маски, треугольник Карпмана, тесты и словарь.",
                 list: [
-                    "Тематический словарь терминов",
-                    "Анализ защитных механизмов",
-                    "Упражнения на осознанность",
-                    "Техники эмоциональной саморегуляции"
+                    "Аудио при тревоге, злости и тяге",
+                    "Радар срыва, иллюзии и маски",
+                    "Треугольник Карпмана",
+                    "Тесты и словарь"
                 ]
             },
             feature7: {
-                title: "Агрегатор реабилитационных центров",
-                description: "Найдите профессиональную помощь рядом с вами. База проверенных реабилитационных центров по всей России.",
+                title: "Карта встреч",
+                description: "Группы поддержки рядом: АА, АН, Ал-Анон, Нар-Анон, CoDA и другие. Фильтр по типу, дню и формату — адрес, время и как добраться.",
                 list: [
-                    "База центров по всей России",
-                    "Подробная информация о программах",
-                    "Отзывы и рейтинги",
-                    "Прямая связь с центрами"
+                    "АА, АН, Ал-Анон, Нар-Анон и CoDA",
+                    "Фильтр по типу, дню и формату",
+                    "Адрес, время и как добраться",
+                    "Группы рядом с вами"
                 ]
             },
             feature8: {
-                title: "Сообщество поддержки",
-                description: "Общайтесь с людьми, которые понимают вас. Делитесь опытом, получайте поддержку и вдохновение.",
+                title: "Сообщество",
+                description: "Люди на том же пути. Делись опытом, читай истории и задавай вопросы.",
                 list: [
-                    "Безопасное пространство общения",
-                    "Истории успеха от реальных людей",
-                    "Взаимная поддержка и мотивация",
-                    "Модерация и конфиденциальность"
+                    "Общий опыт без осуждения",
+                    "Истории реальных людей",
+                    "Вопросы и поддержка",
+                    "Модерация"
                 ]
             }
         },
@@ -132,7 +132,7 @@ const translations = {
         // Timeline Section
         timeline: {
             title: "Начните свой путь сегодня",
-            description: "Присоединяйтесь к тысячам людей, которые уже делают шаги к лучшей жизни",
+            description: "Полный доступ сейчас бесплатно. Leo Recovery рядом и в тяжёлые дни, и в те, когда получается.",
             step1: "Признание проблемы",
             step2: "Обращение за помощью",
             step3: "Интеграция новых знаний",
@@ -154,7 +154,7 @@ const translations = {
             legalTitle: "Правовая информация",
             aboutLink: "О компании",
             privacyLink: "Политика конфиденциальности",
-            copyright: "© 2025 MELNI APPS, LLC. Все права защищены."
+            copyright: "© 2026 MELNI APPS, LLC. Все права защищены."
         },
         
         // Mobile Navigation
@@ -183,10 +183,10 @@ const translations = {
         // Hero Section
         hero: {
             logo: "Leo",
-            title: "Find Your Path to Recovery",
-            subtitle: "Leo Recovery is an app for those seeking support in overcoming addictions. Track your progress, connect with a community, and receive personalized recommendations.",
-            downloadBtn: "Download on App Store",
-            badge: "Available on iOS",
+            title: "Your path to a sober life",
+            subtitle: "Leo Recovery is there when it gets hard. Courses, meditations, speaker stories, an emotion diary, a recovery counter, and the Leo AI assistant. Full access is free right now.",
+            downloadBtn: "Download on the App Store",
+            badge: "Free on iOS",
             usersLabel: "Active Users",
             ratingLabel: "App Store Rating",
             supportLabel: "Hours of Support"
@@ -194,7 +194,7 @@ const translations = {
         
         // Benefits Section
         benefits: {
-            title: "All Tools for Your Recovery",
+            title: "All the tools for your recovery",
             card1: "Deep Understanding",
             card2: "Mental Growth",
             card3: "Stable Motivation"
@@ -202,102 +202,102 @@ const translations = {
         
         // Solution Section
         solution: {
-            title: "Your Solution for Overcoming Addiction",
-            description: "Leo Recovery is not just an app, but a comprehensive support system that helps people regain control of their lives.",
+            title: "There when it gets hard",
+            description: "Getting free of addiction is a marathon, not a sprint. Leo Recovery brings courses, practices, stories, and support into one app. It is an educational platform and does not replace a doctor, therapist, or treatment.",
             list: [
-                "Evidence-based recovery methods",
-                "24/7 support from Leo GPT AI assistant",
-                "Safe and confidential space",
-                "Community of people on the path to recovery"
+                "Courses on addiction and codependency",
+                "Meditations, practices, and speaker stories",
+                "Leo AI assistant, without judgment",
+                "Emotion diary, recovery counter, and community"
             ]
         },
         
         // Features Section
         featuresHeader: {
-            description: "Leo Recovery combines the most effective support methods in one app"
+            description: "Courses, practices, stories, and support — in one app"
         },
         
         features: {
             feature1: {
-                title: "Leo GPT — Your Personal Assistant",
-                description: "AI assistant that understands you and is ready to help at any moment. Based on scientific psychotherapy methods.",
+                title: "Leo — AI assistant",
+                description: "AI in the context of recovery. Questions, advice, and a look at what is going on — without judgment. Conversations stay private.",
                 list: [
-                    "24/7 support without breaks",
-                    "Personalized advice",
-                    "Confidential conversations",
-                    "Empathetic and understanding approach"
+                    "There in a hard moment",
+                    "Situations, without judgment",
+                    "Private conversations",
+                    "Not a substitute for a doctor or therapist"
                 ]
             },
             feature2: {
-                title: "Recovery Tracker",
-                description: "Track your progress day by day. Visualizing achievements motivates you to continue on your recovery journey.",
+                title: "Recovery counter",
+                description: "Progress you can see: sober days and the small wins that make it easier to keep going.",
                 list: [
-                    "Sobriety day counter",
-                    "Motivating quotes",
-                    "Achievement history",
-                    "Reminders and notifications"
+                    "Day counter",
+                    "Small wins along the way",
+                    "Progress history",
+                    "Reminders"
                 ]
             },
             feature3: {
-                title: "Feelings Journal",
-                description: "Explore your emotions and thoughts. Structured journaling helps understand triggers and behavior patterns.",
+                title: "Emotion diary",
+                description: "Write down what you feel and what triggers it, so patterns show up instead of only the hard days.",
                 list: [
-                    "Structured entries",
-                    "Emotion and trigger analysis",
-                    "Leo GPT integration",
-                    "Privacy and confidentiality"
+                    "Notes on feelings and triggers",
+                    "Patterns over time",
+                    "Tied to the Leo assistant",
+                    "Private entries"
                 ]
             },
             feature4: {
-                title: "Educational Courses",
-                description: "Structured learning programs based on proven logotherapy and cognitive-behavioral therapy methods.",
+                title: "Educational courses",
+                description: "Step-by-step programs on addiction and codependency, from people who have walked this path.",
                 list: [
-                    "\"Addiction as a Problem\" course",
-                    "\"Codependency\" program",
-                    "Step-by-step lessons with practice",
-                    "Progress and achievement system"
+                    "A course on addiction",
+                    "A program on codependency",
+                    "Lessons with practice",
+                    "Progress, step by step"
                 ]
             },
             feature5: {
-                title: "Knowledge Feed",
-                description: "Useful articles, recovery stories, and expert materials to support your journey to freedom.",
+                title: "Feed, shorts, and speaker stories",
+                description: "Stories from people who have been through it, short videos, and feed posts — for a couple of minutes or a longer listen.",
                 list: [
-                    "Real recovery stories",
-                    "Scientific articles and research",
-                    "Practical expert advice",
-                    "Inspiring content"
+                    "Speaker video and audio",
+                    "Short videos",
+                    "Practical notes",
+                    "Something for each day"
                 ]
             },
             feature6: {
-                title: "Practices and Exercises",
-                description: "Interactive practices for developing self-awareness, emotional regulation, and overcoming triggers.",
+                title: "Meditations and practices",
+                description: "Audio for anxiety, anger, and cravings, plus tools for a hard moment: relapse radar, illusions, masks, the Karpman triangle, tests, and a glossary.",
                 list: [
-                    "Themed terminology glossary",
-                    "Defense mechanisms analysis",
-                    "Mindfulness exercises",
-                    "Emotional self-regulation techniques"
+                    "Audio for anxiety, anger, and cravings",
+                    "Relapse radar, illusions, and masks",
+                    "The Karpman triangle",
+                    "Tests and a glossary"
                 ]
             },
             feature8: {
-                title: "Support Community",
-                description: "Connect with people who understand you. Share experiences, receive support and inspiration.",
+                title: "Community",
+                description: "People on the same path. Share what you have lived, read stories, and ask questions.",
                 list: [
-                    "Safe communication space",
-                    "Success stories from real people",
-                    "Mutual support and motivation",
-                    "Moderation and confidentiality"
+                    "Shared experience, without judgment",
+                    "Stories from real people",
+                    "Questions and support",
+                    "Moderation"
                 ]
             }
         },
         
         // Timeline Section
         timeline: {
-            title: "Start Your Journey Today",
-            description: "Join thousands of people already taking steps toward a better life",
+            title: "Start your path today",
+            description: "Full access is free right now. Leo Recovery is there on the hard days and on the days that go well.",
             step1: "Problem Recognition",
             step2: "Seeking Help",
             step3: "Integrating New Knowledge",
-            downloadBtn: "Download on App Store"
+            downloadBtn: "Download on the App Store"
         },
         
         // Footer
@@ -308,7 +308,7 @@ const translations = {
             legalTitle: "Legal",
             aboutLink: "About Company",
             privacyLink: "Privacy Policy",
-            copyright: "© 2025 MELNI APPS, LLC. All rights reserved."
+            copyright: "© 2026 MELNI APPS, LLC. All rights reserved."
         },
         
         // Mobile Navigation
@@ -461,7 +461,7 @@ const translations = {
             legalTitle: "Legal",
             aboutLink: "Acerca de la Empresa",
             privacyLink: "Política de Privacidad",
-            copyright: "© 2025 MELNI APPS, LLC. Todos los derechos reservados."
+            copyright: "© 2026 MELNI APPS, LLC. Todos los derechos reservados."
         },
         
         // Mobile Navigation
@@ -484,36 +484,34 @@ const translations = {
 const imagePaths = {
     ru: {
         mockups: {
-            feature1: 'assets/rusMocups/dialogWithLeoGPT.png',
-            feature2: 'assets/rusMocups/recoveryTracker.png',
-            feature3: 'assets/rusMocups/diaryMain.png',
-            feature4: 'assets/rusMocups/addictionCourse.png',
-            feature5: 'assets/rusMocups/leoFeed.png',
-            feature6: 'assets/rusMocups/practice.png',
-            feature7: 'assets/rusMocups/rehabsAggregator.png',
-            feature8: 'assets/rusMocups/realStories.png'
+            feature1: 'assets/rusMocups/dialogWithLeoGPT.webp',
+            feature2: 'assets/rusMocups/recoveryTracker.webp',
+            feature3: 'assets/rusMocups/diaryMain.webp',
+            feature4: 'assets/rusMocups/addictionCourse.webp',
+            feature5: 'assets/rusMocups/leoFeed.webp',
+            feature6: 'assets/rusMocups/practice.webp',
+            feature8: 'assets/rusMocups/realStories.webp'
         },
         backgrounds: {
-            desktop: 'assets/rusMocups/newBackgroundForDesktop.jpg',
-            mobile: 'assets/rusMocups/newBackgroundForDesktop.jpg',
-            tgMobile: 'assets/rusMocups/tgSectionForMob.jpg',
-            tgDesktop: 'assets/rusMocups/tgPromoDek.jpg'
+            desktop: 'assets/hero/hero-desktop.webp',
+            mobile: 'assets/hero/hero-mobile.webp',
+            tgMobile: 'assets/rusMocups/tgSectionForMob.webp',
+            tgDesktop: 'assets/rusMocups/tgPromoDek.webp'
         }
     },
     en: {
         mockups: {
-            feature1: 'assets/engMocups/dialogWithLeoGPT_eng.png',
-            feature2: 'assets/rusMocups/recoveryTracker.png', // No EN version
-            feature3: 'assets/engMocups/diaryMain_eng.png',
-            feature4: 'assets/engMocups/addictionCourse_eng.png',
-            feature5: 'assets/engMocups/leoFeed_eng.png',
-            feature6: 'assets/engMocups/practice_eng.png',
-            feature8: 'assets/engMocups/realStories_eng.png'
-            // feature7 (Rehabs) not included for EN
+            feature1: 'assets/engMocups/dialogWithLeoGPT_eng.webp',
+            feature2: 'assets/rusMocups/recoveryTracker.webp',
+            feature3: 'assets/engMocups/diaryMain_eng.webp',
+            feature4: 'assets/engMocups/addictionCourse_eng.webp',
+            feature5: 'assets/engMocups/leoFeed_eng.webp',
+            feature6: 'assets/engMocups/practice_eng.webp',
+            feature8: 'assets/engMocups/realStories_eng.webp'
         },
         backgrounds: {
-            desktop: 'assets/rusMocups/newBackgroundForDesktop.jpg', // Same for EN
-            mobile: 'assets/rusMocups/newBackgroundForDesktop.jpg' // Same for EN
+            desktop: 'assets/hero/hero-desktop.webp',
+            mobile: 'assets/hero/hero-mobile.webp'
         }
     },
     es: {
